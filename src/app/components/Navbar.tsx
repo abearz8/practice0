@@ -6,7 +6,8 @@ import { NavItem } from '../types/navigation';
 
 const navItems: NavItem[] = [
   { label: 'Christmas', href: '/' },
-  { label: 'Easter', href: '/easter' }
+  { label: 'Easter', href: '/easter' },
+  { label: 'Birthday', href: '/birthday' }
 ];
 
 export default function Navbar() {
@@ -24,8 +25,8 @@ export default function Navbar() {
                 href={item.href}
                 className={`inline-flex items-center px-4 h-full border-b-2 text-sm font-medium transition-colors
                   ${isActive 
-                    ? 'border-red-500 text-red-500 dark:border-red-400 dark:text-red-400' 
-                    : 'border-transparent text-gray-500 hover:text-red-500 hover:border-red-300 dark:text-gray-300 dark:hover:text-red-400'
+                    ? 'border-blue-500 text-blue-500 dark:border-blue-400 dark:text-blue-400' 
+                    : 'border-transparent text-gray-500 hover:text-blue-500 hover:border-blue-300 dark:text-gray-300 dark:hover:text-blue-400'
                   }`}
               >
                 {item.label}
